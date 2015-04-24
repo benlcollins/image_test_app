@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>ImageTestApp</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= stylesheet_link_tag '//fonts.googleapis.com/css?family=Lato' %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+	<header>
+		<h1>Image App: Paperclip, S3, Flex and Sass</h1>
+		<%= link_to "Add new post", new_post_path %>
+	</header>
+
+	<div id="main">
+		<%= yield %>
+	</div>
+
+	<footer>
+		This is the footer
+	</footer>
+
+</body>
+</html>

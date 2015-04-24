@@ -1,0 +1,22 @@
+/* -------------------------------------------------
+Base Styles
+------------------------------------------------- */
+
+html,
+body,
+h1,
+p,
+ul,
+ol {
+	margin: 0;
+	padding: 0;
+}
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+html {
+	font-family: "lato", helvetica, arial, verdana;
+}

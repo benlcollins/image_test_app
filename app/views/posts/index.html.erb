@@ -1,0 +1,19 @@
+<article>
+
+	<% @array.each do |row| %>
+		<div class="Row">
+			<div class="Grid">
+				<% row.compact.each do |p| %>
+					<div class="Grid--1ofX">
+						<a href="/posts/<%= p.id %>"><%= image_tag p.image.url(:large) %></a>
+					</div>
+				<% end %>
+			</div>
+		</div>
+	<% end %>
+
+</article>
+	
+<aside>
+	Sidebar
+</aside>
