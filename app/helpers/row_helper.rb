@@ -5,9 +5,12 @@ module RowHelper
 		elsif posts_array.length < 4
 			@array.push(posts_array)
 		else
-			r = rand(0..3)
-			new_row = posts_array[0..r]
-			remaining = posts_array[(r+1)..posts_array.length]
+			# r = rand(0..3)
+			# new_row = posts_array[0..r]
+			# remaining = posts_array[(r+1)..posts_array.length]
+			r = rand(1..3)
+			new_row = posts_array.take(r)
+			remaining = posts_array - new_row
 			@array.push(new_row)
 			row_split(remaining)
 		end
