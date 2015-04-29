@@ -45,7 +45,5 @@ end
 
 gem 'pry-rails'	
 gem 'aws-sdk', '~> 1.5.7'	# amazon web services gem, appears version 2 not compatible with paperclip yet
-# gem 'aws-sdk'			# amazon web services gem
 gem 'paperclip' 		# paperclip gem for file management
-gem 'betterlorem'		# create lorem ipsum test data
 gem 'dotenv-rails', :groups => [:development, :test]	# env variable to keep sensitive data hidden

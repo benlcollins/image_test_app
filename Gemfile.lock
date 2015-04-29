@@ -42,7 +42,6 @@ GEM
       json (~> 1.4)
       nokogiri (>= 1.4.4)
       uuidtools (~> 2.1)
-    betterlorem (0.1.2)
     binding_of_caller (0.7.2)
       debug_inspector (>= 0.0.1)
     builder (3.2.2)
@@ -175,7 +174,6 @@ PLATFORMS
 
 DEPENDENCIES
   aws-sdk (~> 1.5.7)
-  betterlorem
   byebug
   coffee-rails (~> 4.1.0)
   dotenv-rails

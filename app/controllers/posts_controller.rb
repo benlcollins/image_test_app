@@ -1,6 +1,6 @@
 class PostsController < ApplicationController
 	include RowHelper
-	before_action :find_post, except: [:index, :new]
+	before_action :find_post, except: [:index, :new, :create]
 
 	def index
 		@array = []
