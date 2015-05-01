@@ -7,8 +7,8 @@ module RowHelper
 		else
 			r = rand(2..4)
 			new_row = posts_array.take(r)
-			remaining = posts_array - new_row
 			@array.push(new_row)
+			remaining = posts_array - new_row
 			row_split(remaining)
 		end
 	end

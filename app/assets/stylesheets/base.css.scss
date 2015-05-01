@@ -2,21 +2,18 @@
 Base Styles
 ------------------------------------------------- */
 
-html,
-body,
-h1,
-p,
-ul,
-ol {
+html, body,
+h1, p,
+ul, ol {
 	margin: 0;
 	padding: 0;
 }
-*,
-*:before,
-*:after {
-  box-sizing: border-box;
+*, *:before, *:after {
+	-webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+        -ms-box-sizing: border-box;
+  			box-sizing: border-box;
 }
-
 html {
 	font-family: "lato", helvetica, arial, verdana;
 }

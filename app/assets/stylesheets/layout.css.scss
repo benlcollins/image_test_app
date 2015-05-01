@@ -3,11 +3,10 @@ Layout Styles
 ------------------------------------------------- */
 
 /* Set variables */
-$primaryColor: #0ABBFF;
-$secondaryColor: #76D9FF;
-$compColor: #FF8500;
+$primaryColor: #939393;
+$secondaryColor: #dbdbdb;
 
-/* setup mixins */
+/* setup border-radius mixin */
 @mixin border-radius($radius) {
   -webkit-border-radius: $radius;
      -moz-border-radius: $radius;
@@ -37,15 +36,16 @@ header, footer {
 }
 #main > article {
 	flex: 2 1 66.666%;
-	order: 1px;
+	order: 1;
 	margin: 10px;
 }
 #main > aside {
 	flex: 1 2 33.333%;
-	order: 2px;
+	order: 2;
 	margin: 10px;
-	padding: 10px;
-	background-color: $compColor;
+	padding: 30px;
+	background-color: $secondaryColor;
+	@include border-radius(10px);
 }
 
 /* Level 2 flex layout - rows within article */
@@ -62,7 +62,7 @@ header, footer {
 	img {
 		width: 100%;
 		padding: 10px;
-		border: 1px solid $secondaryColor;
+		border: 2px solid $secondaryColor;
 		@include border-radius(5px);
 	}
 }
