@@ -12,4 +12,4 @@ TL;DR it's a Rails CRUD app that saves images to, and serves images from, Amazon
 
 The design is responsive, with a breakpoint at 600px to switch to a column layout:
 
-![alt text](screenshots/s3_app_small.png "Small screenshot")
+![alt text](screenshots/s3_app_small.jpg "Small screenshot")
